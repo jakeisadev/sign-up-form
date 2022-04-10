@@ -19,8 +19,44 @@ body {
     text-align: center;
 }
 
-@media screen and (min-width: 320px) and (max-width: 576px) {
+ul {
+    list-style: none;
+}
 
+label,
+input {
+    display: block;
+    margin: 20px 10px 10px 10px;
+    font-size: 22px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+    padding-top: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.form-body h3 {
+    color: transparent;
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+
+@media screen and (max-width: 532px) {
     .responsive {
         margin-left: calc(50% - 50vw);
         width: 100%;
@@ -39,5 +75,30 @@ body {
     .txt-background {
         position: relative;
         background: rgba(255, 255, 255, 0.4);
+    }
+
+    .form-heading {
+        margin-top: 75px;
+        text-align: center;
+    }
+
+    .form-body {
+        border-radius: 5px;
+        padding: 15px;
+        margin: 20px;
+        background: #ffffff;
+        -webkit-box-shadow: 0px 5px 15px -7px #000000; 
+        box-shadow: 0px 5px 15px -7px #000000;
+        overflow: hidden;
+    }
+
+    .form-body h3 {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .input-container {
+        margin: auto;
+        overflow: hidden;
     }
 }
